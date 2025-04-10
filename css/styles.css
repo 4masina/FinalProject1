@@ -1,0 +1,52 @@
+header {
+  padding: 5px;
+  background-color: linear-gradient(to right, blue, violet, purple);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+header img {
+  width: 80px;
+}
+header h2 {
+  font-size: 2rem;
+  color: rgb(82, 153, 234);
+  text-shadow: 2px 2px rgb(49, 5, 96);
+  text-transform: uppercase;
+}
+
+nav {
+  margin: 5px;
+  padding: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.hero {
+  width: 100vw;
+  height: 80vh;
+}
+main {
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(82, 153, 234);
+  font-style: italic;
+  width: 100%;
+  background-color: rgb(49, 5, 96);
+}
+
+main p {
+  font-size: 1.5rem;
+  color: rgb(49, 5, 96);
+}
