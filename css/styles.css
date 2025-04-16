@@ -1,16 +1,19 @@
+/* Header Styling */
 header {
-  padding: 5px;
-  background-color: linear-gradient(to right, blue, violet, purple);
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, blue, violet, purple);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 header img {
   width: 80px;
 }
+
 header h2 {
   font-size: 2rem;
   color: rgb(82, 153, 234);
@@ -18,25 +21,37 @@ header h2 {
   text-transform: uppercase;
 }
 
+/* Navigation Styling */
 nav {
-  margin: 5px;
+  margin: 10px 0;
   padding: 5px;
 }
 
 nav a {
   text-decoration: none;
-  font-size: 1.5rem;
-  margin: 5px;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Image */
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 80vh;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
+/* Main Styling */
 main {
   justify-content: center;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
 h1 {
@@ -44,21 +59,81 @@ h1 {
   color: rgb(82, 153, 234);
   font-style: italic;
   width: 100%;
+  padding: 1rem;
   background-color: rgb(49, 5, 96);
+  color: white;
 }
 
 main p {
   font-size: 1.5rem;
   color: rgb(49, 5, 96);
+  max-width: 700px;
+  margin: 1rem auto;
 }
 
+/* About Page Section */
 .abmain {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 1rem;
 }
 
 .abmain img {
-  float: right;
-  width: 400px;
-  height: 600px;
-  margin: 1px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
 }
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  .abmain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+footer {
+  background-color: #4b2e83;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer i:hover {
+  color: #f5d142; /* Gold accent on hover */
+}
+
