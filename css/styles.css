@@ -115,6 +115,7 @@ main p {
     align-items: center;
   }
 
+  /* form */
   form {
   max-width: 600px;
   margin: 2rem auto;
@@ -161,7 +162,6 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #3700b3;
 }
-
 
   /* Footer */
 footer {
